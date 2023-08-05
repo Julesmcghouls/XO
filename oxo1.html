@@ -35,8 +35,15 @@
             </div>
         </div>
         <script>
+            var currentPlayer = 'O'
             function place(box) {
-                alert("You Clicked Here!")
+                box.innerText = currentPlayer;
+                if (currentPlayer == 'O') {
+                    currentPlayer = 'X';
+                }
+                else {
+                    currentPlayer = 'O';
+                }
             }
         </script>
     </body>
